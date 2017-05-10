@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta author="Nel Korajkic">
+    <meta viewport="initial-scale-1">
+    <title>Dano's House Control</title>
+    <link rel="stylesheet" href="./css/bootstap.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+
+
+
+  <body>
+    <div class="container">
+      <div class="row">
+            <h1 class="text-center">Light Control System</h1>
+      </div>
+      <div class="well">
+      <div class="row">
+        <div class="col-xs-4 text-center"> <h2 class="">Light #1</h2><input id=lights1 name="light1" type="checkbox" data-toggle="toggle"> </div>
+        <div class="col-xs-4 text-center"> <h2 class="">Light #2</h2><input id=lights2 name="light2" type="checkbox" data-toggle="toggle"> </div>
+        <div class="col-xs-4 text-center"> <h2 class="">Light #3</h2><input id=lights3 name="light3" type="checkbox" data-toggle="toggle"> </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 text-center"> <h2 class="">Light #4</h2><input id=lights4 name="light4" type="checkbox" data-toggle="toggle"> </div>
+        <div class="col-xs-4 text-center"> <h2 class="">Light #5</h2><input id=lights5 name="light5" type="checkbox" data-toggle="toggle"> </div>
+        <div class="col-xs-4 text-center"> <h2 class="">Light #6</h2><input id=lights6 name="light6" type="checkbox" data-toggle="toggle"> </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="text-center">
+    <ul class="pagination">
+  <li class="disabled"><a href="#">&laquo;</a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+</div>
+</div>
+    </div>
+
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+
+  </body>
+
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+  <script src="./jq.js"></script>
+  <script>if (window.module) module = window.module;</script>
+  <link href="./toggle/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <script src="./toggle/js/bootstrap-toggle.min.js"></script>
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+  <footer>
+    <p class="small text-muted pull-right"> this was made using Electron V <script>document.write(process.versions.electron)</script>. </p>
+  </footer>
+</html>

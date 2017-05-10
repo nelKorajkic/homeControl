@@ -1,0 +1,22 @@
+{
+  "name": "homeControl",
+  "version": "1.0.0",
+  "description": "A Home Control Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/nelKorajkic/homeControl",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Nel Korajkic",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
+}
