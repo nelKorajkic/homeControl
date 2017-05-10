@@ -4,22 +4,15 @@
 
 console.log("Loaded Render.js");
 
-var gpio = require("pi-gpio");
+var gpio = require('rpi-gpio');
 
-gpio.read(40, function(err, value) {
-    if(err) throw err;
-    console.log(value);
-    if (value === 0) {
-      gpio.open(40, "output", function(err) {		// Open pin 40 for output
-          gpio.write(40, 1, function() {			// Set pin 40 high (1)
-              gpio.close(40);						// Close pin 40
-          });
-      });
-    }
-    else {
-      console.log("The pin is already set to 1 (high)");
-    }
-});
+gpio.setup(7, gpio.DIR_IN, readInput);
+
+function readInput() {
+    gpio.read(7, function(err, value) {
+        console.log('The value is ' + value);
+    });
+}
 
 
 
